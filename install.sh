@@ -8,3 +8,5 @@ nvm install node
 sudo setcap cap_net_bind_service=+ep `which node`
 
 git config --global credential.helper store
+
+npm install pm2 -g
