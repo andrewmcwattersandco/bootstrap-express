@@ -4,7 +4,7 @@
 sudo apt update && sudo apt-get upgrade -y
 
 # https://github.com/nvm-sh/nvm
-sudo apt install curl
+sudo apt install curl mysql
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.37.0/install.sh | bash
 nvm install node
 
