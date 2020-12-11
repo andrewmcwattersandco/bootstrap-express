@@ -5,7 +5,7 @@ sudo apt update && sudo apt-get upgrade -y
 
 # https://github.com/nvm-sh/nvm
 sudo apt install curl mysql-server
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.37.0/install.sh | bash
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.37.2/install.sh | bash
 nvm install node
 
 # https://pm2.keymetrics.io
