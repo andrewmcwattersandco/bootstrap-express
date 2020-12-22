@@ -4,7 +4,7 @@
 sudo apt update && sudo apt-get upgrade -y
 
 # https://github.com/nvm-sh/nvm
-sudo apt install curl mysql-server
+sudo apt install curl
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.37.2/install.sh | bash
 nvm install node
 
@@ -16,6 +16,9 @@ sudo apt install certbot
 sudo certbot certonly --standalone
 sudo chown -R user /etc/letsencrypt/live/
 sudo chown -R user /etc/letsencrypt/archive/
+
+# https://ubuntu.com/server/docs/databases-mysql
+sudo apt install mysql-server
 
 # https://git-scm.com/book/en/v2/Git-Tools-Credential-Storage
 git config --global credential.helper store
