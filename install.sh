@@ -20,6 +20,8 @@ sudo chown -R user /etc/letsencrypt/archive/
 # https://ubuntu.com/server/docs/databases-mysql
 sudo apt install mysql-server
 
+sudo apt install sendmail
+
 # https://git-scm.com/book/en/v2/Git-Tools-Credential-Storage
 git config --global credential.helper store
 
