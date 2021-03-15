@@ -24,6 +24,7 @@ sudo apt install mysql-server
 sudo apt install sendmail
 
 # https://git-scm.com/book/en/v2/Git-Tools-Credential-Storage
+sudo apt install git
 git config --global credential.helper store
 
 # https://cwiki.apache.org/confluence/display/HTTPD/NonRootPortBinding
