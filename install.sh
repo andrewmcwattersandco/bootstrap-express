@@ -21,8 +21,8 @@ sudo chown -R user /etc/letsencrypt/archive/
 sudo apt install mysql-server
 
 # https://nodemailer.com/transports/sendmail/
-# TXT Record @ v=spf1 a:example.com ~all Automatic
 # sudo nano /etc/hosts e.g. 198.51.100.0 (external) hostname
+# TXT Record @ v=spf1 a:example.com ~all Automatic
 sudo apt install sendmail
 
 # https://git-scm.com/book/en/v2/Git-Tools-Credential-Storage
