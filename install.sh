@@ -21,7 +21,7 @@ sudo chown -R user /etc/letsencrypt/archive/
 sudo apt install mysql-server
 
 # https://nodemailer.com/transports/sendmail/
-# sudo nano /etc/hosts e.g. 198.51.100.0 (external) hostname
+# sudo nano /etc/hosts e.g. 198.51.100.0 (public Internet) hostname
 # TXT Record @ v=spf1 a:example.com ~all Automatic
 sudo apt install sendmail
 
