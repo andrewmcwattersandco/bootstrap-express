@@ -14,21 +14,21 @@ nvm install node
 npm install pm2 -g
 
 # https://certbot.eff.org
-sudo apt install certbot
+sudo apt install certbot -y
 sudo certbot certonly --standalone
 sudo chown -R $USER /etc/letsencrypt/live/
 sudo chown -R $USER /etc/letsencrypt/archive/
 
 # https://ubuntu.com/server/docs/databases-mysql
-sudo apt install mysql-server
+sudo apt install mysql-server -y
 
 # https://nodemailer.com/transports/sendmail/
 # sudo nano /etc/hosts e.g. 198.51.100.0 (public Internet) hostname
 # TXT Record @ v=spf1 a:example.com ~all Automatic
-sudo apt install sendmail
+sudo apt install sendmail -y
 
 # https://git-scm.com/book/en/v2/Git-Tools-Credential-Storage
-sudo apt install git
+sudo apt install git -y
 git config --global credential.helper store
 
 # https://cwiki.apache.org/confluence/display/HTTPD/NonRootPortBinding
