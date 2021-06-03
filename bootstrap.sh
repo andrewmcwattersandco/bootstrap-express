@@ -24,6 +24,8 @@ sudo apt install mysql-server -y
 
 # https://nodemailer.com/transports/sendmail/
 # sudo nano /etc/hosts e.g. 198.51.100.0 (public Internet) hostname
+# See https://github.com/GoogleCloudPlatform/cloud-self-test-kit/blob/master/tracerouter.py#L169
+# $(dig @ns1.google.com o-o.myaddr.l.google.com TXT +short | tr -d \")
 # TXT Record @ v=spf1 a:example.com ~all Automatic
 sudo apt install sendmail -y
 
