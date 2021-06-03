@@ -7,7 +7,6 @@ As `root`, run `adduser --ingroup sudo user`.
 
 As `user`, run `bootstrap.sh`.
 ```sh
-sudo apt install curl -y
 curl -o- https://raw.githubusercontent.com/andrewmcwattersandco/web-server/main/bootstrap.sh | bash
 ```
 
