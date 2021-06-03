@@ -5,7 +5,11 @@ Seed project for web servers
 
 As `root`, run `adduser --ingroup sudo user`.
 
-As `user`, run the commands from `install.sh`, **manually.**
+As `user`, run `bootstrap.sh`.
+```sh
+sudo apt install curl
+curl -o- https://raw.githubusercontent.com/andrewmcwattersandco/web-server/main/bootstrap.sh | bash
+```
 
 ## License
 MIT License
