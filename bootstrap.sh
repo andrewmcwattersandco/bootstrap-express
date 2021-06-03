@@ -4,8 +4,10 @@
 sudo apt update && sudo apt-get upgrade -y
 
 # https://github.com/nvm-sh/nvm
-sudo apt install curl
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 nvm install node
 
 # https://pm2.keymetrics.io
@@ -14,8 +16,8 @@ npm install pm2 -g
 # https://certbot.eff.org
 sudo apt install certbot
 sudo certbot certonly --standalone
-sudo chown -R user /etc/letsencrypt/live/
-sudo chown -R user /etc/letsencrypt/archive/
+sudo chown -R $USER /etc/letsencrypt/live/
+sudo chown -R $USER /etc/letsencrypt/archive/
 
 # https://ubuntu.com/server/docs/databases-mysql
 sudo apt install mysql-server
