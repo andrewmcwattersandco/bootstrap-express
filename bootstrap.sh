@@ -15,9 +15,9 @@ npm install pm2 -g
 
 # https://certbot.eff.org
 sudo apt install certbot -y
-sudo certbot certonly --standalone
-sudo chown -R $USER /etc/letsencrypt/live/
-sudo chown -R $USER /etc/letsencrypt/archive/
+# sudo certbot certonly --standalone
+# sudo chown -R $USER /etc/letsencrypt/live/
+# sudo chown -R $USER /etc/letsencrypt/archive/
 
 # https://ubuntu.com/server/docs/databases-mysql
 sudo apt install mysql-server -y
