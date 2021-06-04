@@ -1,5 +1,5 @@
 # express-server
-Provisioning script for Express on Ubuntu Server 20.04 LTS
+Provisioning script for Express on Ubuntu
 
 ## Installing
 
