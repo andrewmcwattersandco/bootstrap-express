@@ -13,7 +13,7 @@ nvm install node
 # https://pm2.keymetrics.io
 npm install pm2 -g
 
-# https://certbot.eff.org
+# https://certbot.eff.org/lets-encrypt/ubuntufocal-other
 sudo apt install certbot -y
 # sudo certbot certonly --standalone
 # sudo chmod -R 755 /etc/letsencrypt/live/
