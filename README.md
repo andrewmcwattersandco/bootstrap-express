@@ -1,5 +1,5 @@
 # web-server
-Seed project for web servers
+Provisioning script for Express on Ubuntu Server 20.04 LTS
 
 ## Installing
 
