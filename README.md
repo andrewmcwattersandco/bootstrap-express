@@ -5,7 +5,7 @@ Seed project for web servers
 
 As `root`, run `adduser --ingroup sudo user`.
 
-As `user`, run `bootstrap.sh`.
+As `user`, set hostname, then run `bootstrap.sh`.
 ```sh
 curl -o- https://raw.githubusercontent.com/andrewmcwattersandco/web-server/main/bootstrap.sh | bash
 ```
