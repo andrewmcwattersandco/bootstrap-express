@@ -16,14 +16,15 @@ npm install pm2 -g
 # https://certbot.eff.org/lets-encrypt/ubuntufocal-other
 sudo apt install certbot -y
 # sudo certbot certonly --standalone
-# sudo chmod -R 755 /etc/letsencrypt/live/
-# sudo chmod -R 755 /etc/letsencrypt/archive/
 # sudo sh -c 'printf "#!/bin/sh\nrunuser -u $SUDO_USER -- bash -i -c \"pm2 stop www\"\n" > /etc/letsencrypt/renewal-hooks/pre/node.sh'
 # sudo sh -c 'printf "#!/bin/sh\nrunuser -u $SUDO_USER -- bash -i -c \"pm2 start www\"\n" > /etc/letsencrypt/renewal-hooks/post/node.sh'
 # or
 # sudo sh -c 'printf "#!/bin/sh\nreboot\n" > /etc/letsencrypt/renewal-hooks/post/node.sh'
 # sudo chmod 755 /etc/letsencrypt/renewal-hooks/pre/node.sh
 # sudo chmod 755 /etc/letsencrypt/renewal-hooks/post/node.sh
+
+# https://certbot.eff.org/docs/using.html#where-are-my-certificates
+# sudo chmod 0755 /etc/letsencrypt/{live,archive}
 
 # https://ubuntu.com/server/docs/databases-mysql
 sudo apt install mysql-server -y
