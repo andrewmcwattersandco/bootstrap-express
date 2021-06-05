@@ -18,8 +18,8 @@ sudo apt install certbot -y
 # sudo certbot certonly --standalone
 # sudo chmod -R 755 /etc/letsencrypt/live/
 # sudo chmod -R 755 /etc/letsencrypt/archive/
-# sudo sh -c 'printf "#!/bin/sh\npm2 stop www\n" > /etc/letsencrypt/renewal-hooks/pre/node.sh'
-# sudo sh -c 'printf "#!/bin/sh\npm2 start www\n" > /etc/letsencrypt/renewal-hooks/post/node.sh'
+# sudo sh -c 'printf "#!/bin/sh\nrunuser -u $SUDO_USER -- bash -i -c \"pm2 stop www\"\n" > /etc/letsencrypt/renewal-hooks/pre/node.sh'
+# sudo sh -c 'printf "#!/bin/sh\nrunuser -u $SUDO_USER -- bash -i -c \"pm2 start www\"\n" > /etc/letsencrypt/renewal-hooks/post/node.sh'
 # sudo chmod 755 /etc/letsencrypt/renewal-hooks/pre/node.sh
 # sudo chmod 755 /etc/letsencrypt/renewal-hooks/post/node.sh
 
