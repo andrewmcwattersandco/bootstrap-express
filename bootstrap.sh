@@ -24,7 +24,7 @@ sudo apt install certbot -y
 # sudo chmod 755 /etc/letsencrypt/renewal-hooks/post/node.sh
 
 # https://certbot.eff.org/docs/using.html#where-are-my-certificates
-# sudo chmod 0755 /etc/letsencrypt/{live,archive}
+# sudo chmod -R 0755 /etc/letsencrypt/{live,archive}
 
 # https://ubuntu.com/server/docs/databases-mysql
 sudo apt install mysql-server -y
