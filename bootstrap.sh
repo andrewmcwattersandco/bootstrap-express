@@ -1,7 +1,5 @@
 #!/bin/sh
 
-sudo apt-get update
-
 # https://github.com/nvm-sh/nvm
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash
 export NVM_DIR="$HOME/.nvm"
@@ -13,6 +11,7 @@ nvm install node
 npm install pm2 -g
 
 # https://certbot.eff.org/instructions?ws=other&os=ubuntufocal
+sudo apt-get update
 sudo apt-get -y install certbot
 # sudo certbot certonly --standalone
 
