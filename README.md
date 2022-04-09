@@ -1,4 +1,4 @@
-# express-server
+# bootstrap-express
 Provisioning script for Express on Ubuntu
 
 ## Installing
@@ -12,7 +12,7 @@ As `user`, set your FQDN for sendmail, then run `bootstrap.sh`.
 # 127.0.1.1       thishost.mydomain.org  thishost
 ```
 ```sh
-curl -o - https://raw.githubusercontent.com/andrewmcwattersandco/web-server/v1.0.1/bootstrap.sh | bash
+curl -o - https://raw.githubusercontent.com/andrewmcwattersandco/bootstrap-express/v1.0.1/bootstrap.sh | bash
 ```
 
 ## License
