@@ -1,7 +1,7 @@
 # bootstrap-express
 Provisioning script for Express on Ubuntu
 
-## Installing
+## Provision
 
 As `root`, run `adduser --ingroup sudo user`.
 
