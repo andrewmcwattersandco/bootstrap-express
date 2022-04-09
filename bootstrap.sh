@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/sh
 
 # Update packages.
 sudo apt-get update && sudo apt-get -y upgrade
