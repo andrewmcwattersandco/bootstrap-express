@@ -18,7 +18,7 @@ curl -o - https://raw.githubusercontent.com/andrewmcwattersandco/bootstrap-expre
 ## License
 MIT License
 
-Copyright (c) 2021 Andrew McWatters & Co.
+Copyright (c) 2022 Andrew McWatters & Co.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
