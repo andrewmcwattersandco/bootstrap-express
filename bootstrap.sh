@@ -16,6 +16,8 @@ npm install pm2 -g
 # https://certbot.eff.org/instructions?ws=other&os=ubuntufocal
 sudo apt-get -y install certbot
 # sudo certbot certonly --standalone
+
+# https://eff-certbot.readthedocs.io/en/stable/using.html?highlight=renewal#setting-up-automated-renewal
 # sudo sh -c 'printf "#!/bin/sh\nrunuser -u $SUDO_USER -- bash -i -c \"pm2 stop www\"\n" > /etc/letsencrypt/renewal-hooks/pre/node.sh'
 # sudo sh -c 'printf "#!/bin/sh\nrunuser -u $SUDO_USER -- bash -i -c \"pm2 start www\"\n" > /etc/letsencrypt/renewal-hooks/post/node.sh'
 # or
