@@ -13,7 +13,7 @@ nvm install node
 # https://pm2.keymetrics.io
 npm install pm2 -g
 
-# https://certbot.eff.org/lets-encrypt/ubuntufocal-other
+# https://certbot.eff.org/instructions?ws=other&os=ubuntufocal
 sudo apt-get -y install certbot
 # sudo certbot certonly --standalone
 # sudo sh -c 'printf "#!/bin/sh\nrunuser -u $SUDO_USER -- bash -i -c \"pm2 stop www\"\n" > /etc/letsencrypt/renewal-hooks/pre/node.sh'
