@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # Update packages.
-sudo apt update && sudo apt-get upgrade -y
+sudo apt-get update && sudo apt-get -y upgrade
 
 # https://github.com/nvm-sh/nvm
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash
@@ -14,7 +14,7 @@ nvm install node
 npm install pm2 -g
 
 # https://certbot.eff.org/lets-encrypt/ubuntufocal-other
-sudo apt install certbot -y
+sudo apt-get -y install certbot
 # sudo certbot certonly --standalone
 # sudo sh -c 'printf "#!/bin/sh\nrunuser -u $SUDO_USER -- bash -i -c \"pm2 stop www\"\n" > /etc/letsencrypt/renewal-hooks/pre/node.sh'
 # sudo sh -c 'printf "#!/bin/sh\nrunuser -u $SUDO_USER -- bash -i -c \"pm2 start www\"\n" > /etc/letsencrypt/renewal-hooks/post/node.sh'
@@ -27,7 +27,7 @@ sudo apt install certbot -y
 # sudo chmod -R 0755 /etc/letsencrypt/{live,archive}
 
 # https://ubuntu.com/server/docs/databases-mysql
-sudo apt install mysql-server -y
+sudo apt-get -y install mysql-server
 
 # https://nodemailer.com/transports/sendmail/
 # https://man7.org/linux/man-pages/man5/hosts.5.html#EXAMPLES
@@ -38,10 +38,10 @@ sudo apt install mysql-server -y
 # or
 # sudo echo "$(curl https://checkip.amazonaws.com)\tfqdn hostname" >> /etc/hosts
 # TXT Record @ v=spf1 a:thishost.mydomain.org ~all Automatic
-sudo apt install sendmail -y
+sudo apt-get -y install sendmail
 
 # https://git-scm.com/book/en/v2/Git-Tools-Credential-Storage
-sudo apt install git -y
+sudo apt-get -y install git
 git config --global credential.helper store
 
 # https://cwiki.apache.org/confluence/display/HTTPD/NonRootPortBinding
