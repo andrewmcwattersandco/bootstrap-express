@@ -13,7 +13,7 @@ export NVM_DIR="$HOME/.nvm"
 nvm install node
 
 # https://cwiki.apache.org/confluence/display/HTTPD/NonRootPortBinding
-sudo setcap cap_net_bind_service=+ep `which node`
+sudo setcap cap_net_bind_service=+ep $(which node)
 
 # https://pm2.keymetrics.io
 npm install pm2 -g
