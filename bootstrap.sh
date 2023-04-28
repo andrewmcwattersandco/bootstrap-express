@@ -3,7 +3,9 @@
 # https://git-scm.com/book/en/v2/Git-Tools-Credential-Storage
 sudo apt-get update
 sudo apt-get -y install git
-git config --global credential.helper store
+# git config --global credential.helper store
+# Use Deploy keys instead
+# https://docs.github.com/en/authentication/connecting-to-github-with-ssh/managing-deploy-keys#deploy-keys
 
 # https://github.com/nvm-sh/nvm
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash
