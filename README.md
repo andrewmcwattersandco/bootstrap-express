@@ -15,14 +15,14 @@ As `user`, set your FQDN for sendmail, then run `bootstrap.sh`.
 ```
 
 ```sh
-curl -o - https://raw.githubusercontent.com/andrewmcwattersandco/bootstrap-express/v2.0.2/bootstrap.sh | bash
+curl -o - https://raw.githubusercontent.com/andrewmcwattersandco/bootstrap-express/v2.0.3/bootstrap.sh | bash
 ```
 
 ## License
 
 MIT License
 
-Copyright (c) 2024 Andrew McWatters & Co.
+Copyright (c) 2025 Andrew McWatters & Co.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
